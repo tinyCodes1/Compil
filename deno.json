@@ -1,0 +1,11 @@
+{
+  "name":"@tinycode/compil",
+  "version":"0.0.4",
+  "exports": {
+    ".": "./compil.ts"
+  },
+  "dependencies": {
+    "@deno/emit": "jsr:@deno/emit",
+    "@std/path/resolve" : "jsr:@std/path/resolve"
+  }
+}
