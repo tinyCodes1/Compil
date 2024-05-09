@@ -4,6 +4,7 @@
 
 - Typescript file can be specified as src in html file.
 - By default script specified as type module in output html.
+- You may use precompiled version.
 
 
 ## Install
