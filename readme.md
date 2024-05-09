@@ -3,32 +3,47 @@
 @tinycode/compil is simple script to make standalone html file.
 
 - Typescript file can be specified as src in html file.
-- By default script specified as type module in output html.
+- By default script specified as type="module" in output html.
 - You may use precompiled version.
 
-
-## Install
+## Usage (with deno):
+---
+### 1. Install
 ```sh
 deno install --allow-read --allow-write --allow-net --allow-env jsr:@tinycode/compil
 ```
 
+### 2. Use
+Now you can use it from command line.
+```sh
+compil index.html
+```
 
-## Update
+***Update***
 ```sh
 deno install --reload --force --allow-read --allow-write --allow-net --allow-env jsr:@tinycode/compil
 ```
 
-
-## Usage
+***Uninstall***
 ```sh
-compil index.html
-```
-or
-```sh
-compil index.htm
+deno uninstall compil
 ```
 
-### Uninstall
+## Usage (without Deno):
+---
+You need to use precompiled version to use it without installing deno.
+### 1. Download
+Download appropriate version from [here](https://github.com/tinyCodes1/Compil/tree/main/Dist).
+
+### 2. Use
+***Windows***
+Click on compil.exe directly *or*
+Open command line in downloaded location.
+```cmd
+.\compil.exe index.html
+```
+***Linux***
 ```sh
-deno uninstall compile
+chmod +x ./compil
+./compil index.html
 ```
